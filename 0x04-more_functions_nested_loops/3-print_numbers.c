@@ -5,7 +5,7 @@
  * followed by a new line.
  * Return: Always 0
  */
-void print_numbers(void)
+void print_number(void)
 {
 	int i = '0';
 
