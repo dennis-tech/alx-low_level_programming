@@ -1,18 +1,31 @@
 #include "main.h"
-#include <string.h>
 /**
- * _strcat - appends src string to dest string
- * @dest: destination string
- * @src: source string
- * Return: result of concatenation in string form
- */
+ *  * _strlen - returns the length of string
+ *   * @s: string to return length
+ *    * Return: length of @s
+ *     */
+int _strlen(char *s)
+{
+		int length = 0;
+
+			while (*s++)
+						length++;
+				return (length);
+}
+
+/**
+ *  * _strcat - appends a string to another
+ *   * @src: string to append
+ *    * @dest: string to append to
+ *     * Return: appended string
+ *      */
 char *_strcat(char *dest, char *src)
 {
-	int len = strlen(dest);
-	unsigned int i;
+		int dest_len = _strlen(dest);
+			int i;
 
-	for (i = 0; i < strlen(src); i++)
-		dest[len + i] = src[i];
-
-	return (dest);
+				for (i = 0; src[i] != '\0'; i++)
+							dest[dest_len + i] = src[i];
+					dest[dest_len + i] = '\0';
+						return (dest);
 }

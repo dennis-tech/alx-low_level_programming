@@ -1,13 +1,18 @@
-
 #include "main.h"
 
 /**
- * _abs - returns absolute value of the number input
- * @x: number to be absoluted
- *
- * Return: returns absolute value
- */
-int _abs(int x)
+ *  * _abs - print absolute value of a number
+ *   * @a: number to return absolute value
+ *    * Return: the absolute value of a number
+ *     */
+int _abs(int a)
 {
-	return (_abs(x));
+		if (a < 0)
+				{
+							return (a * -1);
+								}
+			else
+					{
+								return (a);
+									}
 }
